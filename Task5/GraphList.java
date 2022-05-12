@@ -1,3 +1,5 @@
+package Task5;
+
 import java.util.ArrayList;
 import java.util.LinkedList;
 
@@ -28,17 +30,7 @@ class GraphAdjList {
 		Node dstNode = alist.get(dst).get(0);
 		currentList.add(dstNode);
 	}
-	public boolean checkEdge(int src, int dst) {
-		LinkedList<Node> currentList = alist.get(src);
-		Node dstNode = alist.get(dst).get(0);
-		
-		for(Node node : currentList) {
-			if(node == dstNode) {
-				return true;
-			}
-		}
-		return false;
-	}
+	
 	public void print() {
 		for(LinkedList<Node> currentList : alist) {
 			for(Node node : currentList) {

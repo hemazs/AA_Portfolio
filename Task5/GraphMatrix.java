@@ -1,3 +1,5 @@
+package Task5;
+
 
 public class GraphMatrix {
     private boolean adjMatrix[][];
@@ -15,11 +17,7 @@ public class GraphMatrix {
       adjMatrix[j][i] = true;
     }
   
-    // Removing edges
-    public void removeEdge(int i, int j) {
-      adjMatrix[i][j] = false;
-      adjMatrix[j][i] = false;
-    }
+  
   
     // Printing the matrix
     public String toString() {
